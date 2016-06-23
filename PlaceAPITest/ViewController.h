@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <GoogleMaps/GoogleMaps.h>
+@import GoogleMaps;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CLLocationManagerDelegate>
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *location;
+@property (weak, nonatomic) IBOutlet UILabel *lblLongitude;
+@property (weak, nonatomic) IBOutlet UILabel *lblLatitude;
+@property (weak, nonatomic) IBOutlet UILabel *lblAltitude;
+@property (weak, nonatomic) IBOutlet UILabel *lblPlaces;
 
-
+@property GMSPlacesClient *placesClient;
 @end
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0292466BE9ABE4F12B46CD8 /* libPods-PlaceAPITest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CBFB74CC47717E74C958A1 /* libPods-PlaceAPITest.a */; };
 		C4DAC02E1D1BAED600625E93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DAC02D1D1BAED600625E93 /* main.m */; };
 		C4DAC0311D1BAED600625E93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DAC0301D1BAED600625E93 /* AppDelegate.m */; };
 		C4DAC0341D1BAED600625E93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DAC0331D1BAED600625E93 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59CBFB74CC47717E74C958A1 /* libPods-PlaceAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaceAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DAC0291D1BAED600625E93 /* PlaceAPITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceAPITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DAC02D1D1BAED600625E93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4DAC02F1D1BAED600625E93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		C4DAC04D1D1BAED600625E93 /* PlaceAPITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceAPITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DAC0511D1BAED600625E93 /* PlaceAPITestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceAPITestUITests.m; sourceTree = "<group>"; };
 		C4DAC0531D1BAED600625E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D62745B3DD5B6B5E57ACC7 /* Pods-PlaceAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceAPITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceAPITest/Pods-PlaceAPITest.release.xcconfig"; sourceTree = "<group>"; };
+		F8F8023CBCC7566B80E72BBE /* Pods-PlaceAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceAPITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceAPITest/Pods-PlaceAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0292466BE9ABE4F12B46CD8 /* libPods-PlaceAPITest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59FF7AC17D2C19B74E2A8684 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F8023CBCC7566B80E72BBE /* Pods-PlaceAPITest.debug.xcconfig */,
+				D2D62745B3DD5B6B5E57ACC7 /* Pods-PlaceAPITest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4BB4EB36E414D9C206514C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59CBFB74CC47717E74C958A1 /* libPods-PlaceAPITest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4DAC0201D1BAED500625E93 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				C4DAC0451D1BAED600625E93 /* PlaceAPITestTests */,
 				C4DAC0501D1BAED600625E93 /* PlaceAPITestUITests */,
 				C4DAC02A1D1BAED600625E93 /* Products */,
+				59FF7AC17D2C19B74E2A8684 /* Pods */,
+				B4BB4EB36E414D9C206514C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DAC0561D1BAED600625E93 /* Build configuration list for PBXNativeTarget "PlaceAPITest" */;
 			buildPhases = (
+				809C559852AEF9AF80FF00D5 /* [CP] Check Pods Manifest.lock */,
 				C4DAC0251D1BAED500625E93 /* Sources */,
 				C4DAC0261D1BAED500625E93 /* Frameworks */,
 				C4DAC0271D1BAED500625E93 /* Resources */,
+				3A8D7204F2BCF9931935559B /* [CP] Embed Pods Frameworks */,
+				D2EDE0D48B31F6A78129D05F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A8D7204F2BCF9931935559B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaceAPITest/Pods-PlaceAPITest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809C559852AEF9AF80FF00D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2EDE0D48B31F6A78129D05F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaceAPITest/Pods-PlaceAPITest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4DAC0251D1BAED500625E93 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		C4DAC0571D1BAED600625E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F8023CBCC7566B80E72BBE /* Pods-PlaceAPITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlaceAPITest/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		C4DAC0581D1BAED600625E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D62745B3DD5B6B5E57ACC7 /* Pods-PlaceAPITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlaceAPITest/Info.plist;
@@ -498,6 +575,7 @@
 				C4DAC0581D1BAED600625E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DAC0591D1BAED600625E93 /* Build configuration list for PBXNativeTarget "PlaceAPITestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				C4DAC05B1D1BAED600625E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DAC05C1D1BAED600625E93 /* Build configuration list for PBXNativeTarget "PlaceAPITestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				C4DAC05E1D1BAED600625E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
